@@ -14,11 +14,15 @@
 		$stmt->bind_param("ssssi", $firstName, $lastName, $email, $college, $grade);
 		$execval = $stmt->execute();
 		echo $execval;
-		echo $firstName . ' '."تم التسجيل بنجاح";
+        echo '<div style="width: 100%; height: 100px; text-align: center;">';
+		echo  '<h1>'."تم التسجيل بنجاح".'</h1>';
+
+        echo '</div>';
 
 		$stmt->close();
 		$conn->close();
-        header("Location: http://localhost/student/"); 
-        exit();
+        
+        // header("Location: http://localhost/student/"); 
+        // exit();
 	}
 ?>
