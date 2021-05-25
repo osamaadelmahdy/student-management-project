@@ -12,7 +12,8 @@
     <div class="row">
         <div class="container text-center">
             <div class="col-md-6 offset-md-3">
-                <h1 class='mt-5'>Add Student</h1>
+                <h1 class='mt-5'>Student Management</h1>
+                <h2 class='mt-5'>Add Student</h2>
                     <form action="studentdb.php" method="post">
                     
                         <div class="col-md-12">
