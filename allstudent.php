@@ -30,6 +30,7 @@
             <th scope="col">email</th>
             <th scope="col">college</th>
             <th scope="col">grade</th>
+            <th scope="col">delete</th>
           </tr>
         </thead>
         <tbody>
@@ -42,7 +43,11 @@
             '<td>' . $row["lastName"]. '</td>'.
             '<td>' . $row["email"]. '</td>'.
             '<td>' . $row["college"]. '</td>'.
-            '<td>' . $row["grade"] .' </td></tr>';
+            '<td>' . $row["grade"]. '</td>'.
+            '<td>' . '<form action="delete.php" method="post" >
+             <input name="delete" value="'.$row["id"].'" type="hidden" >
+              <input type="submit" value="delete" class="btn btn-danger">
+              </form>'.' </td></tr>';
             }
             echo '
                 
